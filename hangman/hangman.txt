@@ -1,0 +1,34 @@
+1. Display:
+   Word: print'_ _ _'number of dash will be based on the len of word
+2. Print users guessed words in "Guessed:"
+3. If the guessed letter(s) are in the word print it in 'Word:' and 'Guessed:'
+4. Print the 'Score Card', 'Word(s)#:', 'Correct Guesses:', 'Incorrect Guesses:'
+5. Print 'Correct Guesses:' and 'Incorrect Guesses:'
+
+
+
+Tests:
+
+1. Guesses: len(list)+2
+2. If all the guesses are incorrect then:
+  
+      1. print Sorry, the word was "print the real word"
+      2. Another word? (ask the user if they want another word?)
+      	 - if yes, start over with a new word but make sure that the previous
+      	   word(s) does not repeat.
+	 - update the 'Score Card', Word(s)#, 'Correct Guesses', 'Incorrect Guesses'
+	 - If no, exit the game
+	 
+    If all the guesses are correct then:
+      1. print Congratulations! the word is "print the real word"
+      2. Another word? (ask the user if they want another word?)
+      	 - if yes, start over with a new word but make sure that the previous
+      	   word(s) does not repeat.
+	 - update the 'Score Card', Word(s)#, 'Correct Guesses', 'Incorrect Guesses'
+	 - if no, exit the game
+	 
+3. Minmum 5 letter word
+
+4. If the guessed letter already guessed/repeated - print 'letter already guessed'
+
+    
