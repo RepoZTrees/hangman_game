@@ -1,5 +1,6 @@
 from hangman import get_secret_word
 from hangman import hide_word
+#from hangman import test_secret_word_atleast_five
 
 def test_secret_word_no_punctuation():
     with open ("/tmp/words.txt","w") as f:
@@ -40,36 +41,12 @@ def test_hide_seventh_guess():
     sw = "elephant"
     assert hide_word(sw,['e','l','p','h','a','n','t']) == "elephant"
     
-
-
-    
-
-    
-    # assert hw(sw,[l])== _l______
-    # assert hw(sw,[e,l]) == ele_____
-    # assert hw(sw,)
-    # for i in []
-    
-
-
-
-
-
-
-
-
-
-    
-
-
-"""
 def test_secret_word_atleast_five():
     with open("/tmp/words.txt","w") as f:
         for i in ["wo", "wor", "word", "bigword"]:
             f.write(i+"\n")
     selected_word = get_secret_word('/tmp/words.txt')
     assert selected_word == "bigword"
-
     
 def test_secret_word_lowercase():
     with open("/tmp/words.txt","w") as f:
@@ -85,5 +62,4 @@ def test_secret_word_no_repeat():
     l = []
     for i in range(3):
         l.append(get_secret_word('/tmp/words.txt'))
-    assert le(set(1)) == 3
-"""
+    assert len(set(l)) == 3
